@@ -79,7 +79,7 @@ export const getStaticProps: GetStaticProps<ProductProps> = async context => {
 
   const product = await client().queryFirst([
     Prismic.Predicates.at('document.type', 'product'),
-    Prismic.Predicates.at('my.product.uid', 'node-js-trousers'),
+    Prismic.Predicates.at('my.product.uid', slug),
   ]);
 
   return {

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
    * {
@@ -24,5 +24,10 @@ export default createGlobalStyle`
          transform: translateX(10px);
        }
      }
+   }
+
+   img {
+     object-fit: cover;
+     object-position: center;
    }
 `;
